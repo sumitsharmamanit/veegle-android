@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:fillViewport="true"
+    tools:context=".ProfilePhoto"
+    android:scrollbars="none"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relParent">
+
+
+            <LinearLayout
+                android:id="@+id/backBtn"
+                android:gravity="center"
+                android:padding="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_btn"
+                    android:id="@+id/imgBack"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Photo"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_thumbnailbig"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/female_1"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@android:color/white"
+                app:riv_border_width="1dip"
+                app:riv_corner_radius="4dip"
+                app:riv_oval="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/linPickImage"
+            android:background="@drawable/button_bg_rounder_withborderline">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT YOUR PHOTO"
+                    android:textColor="@color/white"
+                    android:background="@drawable/corner_layout"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:id="@+id/linGallery">
+
+                <TextView
+                    android:drawableRight="@drawable/frd_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select From Gallery"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/myview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:id="@+id/linCamera">
+
+                <TextView
+                    android:drawableRight="@drawable/frd_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select From Camera"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/myview1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:id="@+id/linMedia">
+
+                <TextView
+                    android:drawableRight="@drawable/frd_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select From Social Media"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linImage"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:id="@+id/linCancel">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancel"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/button_bg_rounder_cancel"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:id="@+id/linText"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/hint_color"
+                android:text="This will be your primary photo and will be"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/hint_color"
+                android:text="used to verify your profile"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linImage"
+            android:layout_marginTop="25dp"
+            android:id="@+id/linReady"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReady"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/button_bg_rounder_login"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

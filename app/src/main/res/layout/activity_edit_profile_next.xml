@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:id="@+id/parentLayout"
+    android:scrollbars="none"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relParent">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_btn"
+                    android:id="@+id/imgBack"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/work_education" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_work"
+            android:background="@drawable/timeline_background"
+            android:layout_marginLeft="10sp"
+            android:padding="10dp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+            <EditText
+                android:id="@+id/et_work"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/hint_color"
+                android:hint="Work..."
+                android:background="@null"
+                android:inputType="text|textNoSuggestions|textCapSentences"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:maxLength="25"
+                android:layout_height="match_parent" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/sp_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:background="@null"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_education"
+            android:gravity="center_vertical"
+            android:background="@drawable/timeline_background"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:padding="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+            <EditText
+                android:id="@+id/et_education"
+                android:textColorHint="@color/hint_color"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/white"
+                android:padding="10sp"
+                android:visibility="gone"
+                android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                android:imeOptions="actionNext"
+                android:hint="Education..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/sp_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hobbies" />
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:background="@drawable/timeline_background"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+            android:visibility="gone"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp">
+
+            <EditText
+                android:id="@+id/et_interest"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="top|left"
+                android:textColorHint="@color/hint_color"
+                android:hint="Interest..."
+                android:background="@null"
+                android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_hobbies"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/timeline_background"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+            android:layout_marginRight="10sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60sp">
+
+            <EditText
+                android:id="@+id/et_hobbies"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="top|left"
+                android:textColorHint="@color/hint_color"
+                android:hint="Hobbies..."
+                android:textColor="@color/white"
+                android:background="@null"
+                android:inputType="textCapWords|textNoSuggestions|textMultiLine"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/frd_arrow"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/routine" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:background="@drawable/timeline_background"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_general_routine"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="top|left"
+                android:textColorHint="@color/hint_color"
+                android:hint="General Day Routine..."
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:lines="10"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:background="@drawable/timeline_background"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_weekend_routine"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="top|left"
+                android:textColorHint="@color/hint_color"
+                android:hint="Weekend Routine..."
+                android:background="@null"
+                android:lines="10"
+                android:scrollbars="vertical"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linPassword"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linLogin">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNext"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_bg_rounder_login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

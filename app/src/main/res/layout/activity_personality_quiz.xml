@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalityQuiz"
+    android:id="@+id/parentLayout"
+    android:background="@color/half_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relParent"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/ll_back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_btn"
+                android:id="@+id/imgBack"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover yourself"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/state_progress_bar"
+        android:layout_below="@+id/relParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="four"
+        android:layout_gravity="center"
+        app:spb_stateLineThickness="1dp"
+        app:spb_stateTextSize="12sp"
+        app:spb_stateBackgroundColor="#c4c4c4"
+        app:spb_stateForegroundColor="#8dce6f"
+        app:spb_stateNumberBackgroundColor="@color/white"
+        app:spb_stateNumberForegroundColor="@color/white"
+        app:spb_currentStateDescriptionColor="#8dce6f"
+        app:spb_stateDescriptionColor="#c4c4c4"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_question"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp">
+
+        <ImageView
+            android:id="@+id/iv_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_half"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/half_circle"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_question"/>
+
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="-20dp"
+        android:layout_below="@+id/state_progress_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Yes"
+                android:gravity="center"
+                android:padding="30dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/btn_color" />
+
+            
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No"
+                android:gravity="center"
+                android:padding="30dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/btn_color" />
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_personality"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/relParent"/>
+
+</RelativeLayout>

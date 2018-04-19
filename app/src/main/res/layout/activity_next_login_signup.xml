@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:id="@+id/parentLayout"
+    tools:context=".NextLoginSignupActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:id="@+id/linParent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're Looking For!!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linParent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/linButton">
+
+        <Button
+            android:id="@+id/btnNewFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Make New Friends"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/new_friend_text"
+            android:background="@drawable/button_bg_rounder_withborderline"/>
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Chat"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/chat_text"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg_rounder_withborderline"/>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Date"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/date_text"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg_rounder_withborderline"/>
+
+        <Button
+            android:id="@+id/btn_serious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Serious Relationship"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/serious_btn_color"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg_rounder_withborderline"/>
+
+        <Button
+            android:id="@+id/btn_casual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Something Casual/Fun"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+            android:textColor="@color/casual_btn_color"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg_rounder_withborderline"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linOR"
+        android:layout_below="@id/linButton"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/or"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linOR"
+        android:id="@+id/linConnect"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect With"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linSocial"
+        android:layout_below="@+id/linConnect"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgFB"
+            android:src="@drawable/fb"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgTwitter"
+            android:src="@drawable/tw"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgInstagram"
+            android:src="@drawable/insta"/>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

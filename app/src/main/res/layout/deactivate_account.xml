@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/parentLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="If you deactivate your account, you will lose all your profile data including messages, photos, and matches permanently. This cannot be undone."
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_education"
+        android:gravity="center_vertical"
+        android:background="@drawable/blog_border"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_margin_xlarge"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_education"
+            android:textColorHint="@color/hint_color"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+            android:imeOptions="actionNext"
+            android:hint="Please select a reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/sp_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@null"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_arrow"
+            android:tint="@color/dark_gray"
+            android:paddingLeft="@dimen/text_margin_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_block_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:lines="4"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:hint="Any other reason? Please detail:"
+        android:gravity="start"
+        android:visibility="visible"
+        android:maxLength="300"
+        android:background="@drawable/blog_border"
+        android:padding="10dp"
+        android:layout_marginBottom="@dimen/activity_margin_normal"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_yes"
+        android:layout_gravity="center"
+        android:text="Proceed"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:minHeight="0dp"
+        android:textSize="@dimen/text_size_large"
+        android:textAllCaps="false"
+        android:padding="@dimen/activity_margin_normal"
+        android:textColor="@color/white"
+        android:background="@drawable/deactivate_background"/>
+
+
+</LinearLayout>
+</layout>

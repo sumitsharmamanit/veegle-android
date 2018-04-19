@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Veegle</string>
+
+    <string name="button_text">Already have an account, Login here</string>
+    <string name="app_text_name">APP NAME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loading_txt">Please Wait...</string>
+
+    <!--Validation-->
+
+    <string name="enter_login_txt">Please enter email.</string>
+    <string name="enterpassword_txt">Please enter password.</string>
+
+    <string name="profile_txt">Your profile is under verification. Please update your profile. Don\'t forget to answer our quizzes. They will help us find you better matches. Your profile will be verified within 24 hours.</string>
+
+    <!--Edit Profile -->
+    <string name="about_me">ABOUT ME</string>
+    <string name="looking_for">LOOKING FOR</string>
+    <string name="personal_info">PERSONAL INFO</string>
+    <string name="work_education">WORK AND EDUCATION</string>
+    <string name="basic_info">BASIC INFO</string>
+    <string name="hobbies">HOBBIES</string>
+    <string name="routine">ROUTINE</string>
+    <string name="pesronality_quiz">PERSONALITY QUIZ</string>
+    <string name="partner_preference">Partner Preference</string>
+    <string name="status">STATUS</string>
+    <string name="timeline">Timeline</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="name">NAME</string>
+    <string name="gender">GENDER</string>
+    <string name="brith_day">BIRTHDAY</string>
+    <string name="height">HEIGHT (in cm)</string>
+    <string name="weight">WEIGHT (in kg)</string>
+    <string name="age">AGE (in years)</string>
+    <string name="bodutype">BODY TYPE</string>
+    <string name="ethencity">ENTHICITY</string>
+    <string name="orientation">OREINTATION</string>
+
+    <!--Picker-->
+    <string name="okay">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="facebook_app_id">1016789415161786</string>
+    <string name="fb_login_protocol_scheme">fb1016789415161786</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">8TaYNOLJdXh3n7T7tRZY4iHQr</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">3eEgVhN37Q4zLxTd4pAW9R2J7XVKhJfFIlgBPc7OBLnu3fcszC</string>
+
+    <!--<string name="com.twitter.sdk.android.CONSUMER_KEY">nmmTIDw5ZMw36snzvDMKTfy3G</string>-->
+    <!--<string name="com.twitter.sdk.android.CONSUMER_SECRET">jo6MpfclQ2DPfb1MhYqpQqg2enDIsHo2TCNhjKVEr8zod58Mez</string>-->
+
+    <string name="add_more_text">The application will receive your friend list, photo, personal description and email ID.</string>
+    <string name="edit">Edit</string>
+
+    <string name="profile_visit">Profile Visit</string>
+    <string name="like">Like</string>
+    <string name="invite">Invite</string>
+    <string name="invite_">Invitation Received</string>
+    <string name="block">Block</string>
+    <string name="auto_match">Auto-Match</string>
+    <string name="match">Matched</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">ago</string>
+    <string name="time_ago_seconds">less than %d minute</string>
+    <string name="time_ago_minute">about %d minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">about %d hour</string>
+    <string name="time_ago_hours">about %d hours</string>
+    <string name="time_ago_day">%d day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">about %d month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year">about %d year</string>
+    <string name="time_ago_years">%d years</string>
+
+    <string name="crop_action_error">Sorry! image is not cropped.</string>
+    <string name="gallery_pick_error">Sorry! image is not picked from gallery. Please try again.</string>
+    <string name="camera_capture_error">Sorry! image is not captured. Please try again.</string>
+    <string name="crop_action_support">Sorry! your device doesn\'t support cropping action.</string>
+
+
+    <string name="a_moment_ago">A moment ago</string>
+    <string name="minute_ago">Minute ago</string>
+    <string name="minutes_ago">Minutes ago</string>
+    <string name="second_ago">Second ago</string>
+    <string name="seconds_ago">Seconds ago</string>
+    <string name="day_ago">Day ago</string>
+    <string name="days_ago">Days ago</string>
+    <string name="hour_ago">Hour ago</string>
+    <string name="hours_ago">Hours ago</string>
+    <string name="year_ago">Year ago</string>
+    <string name="years_ago">Years ago</string>
+
+    <string name="my_preference">My Preference</string>
+    <string name="choose_who">Choose who you\'d like to</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="settings">Settings</string>
+    <string name="invite_earn">Invite friends and family</string>
+    <string name="manage_noti">Manage your settings</string>
+    <string name="need_help">Need Help?</string>
+    <string name="faq">FAQ, Tutorials</string>
+    <string name="about">About</string>
+    <string name="app_company">App version, company</string>
+    <!--<string name="deactivate_user">Pause for 8 hours \nNo one will cross you</string>-->
+    <string name="deactivate_user">Hide me from Live Mode</string>
+    <string name="feedback">Feedback</string>
+    <string name="submit_feedback">Your feedback</string>
+
+    <string name="search_hint">Search</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="main_introduction">Click the buttons below to show a camera preview or access the contacts database.\nNote that the contacts option is only available on Android M to illustrate the use of optional, M-only permissions that are not requested on lower SDK platforms.</string>
+    <string name="permision_available_camera">Camera Permission has been granted. Preview can now be opened.</string>
+    <string name="permision_available_contacts">Contacts Permissions have been granted. Contacts screen can now be opened.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_contacts_rationale">Contacts permissions are needed to demonstrate access.</string>
+
+    <string name="server_error">Currently app is not able to reach server, Please try again after some time.</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <string name="skip">SKIP</string>
+    <string name="next_">NEXT</string>
+    <string name="start">GOT IT</string>
+
+    <string name="error">Error</string>
+
+    <string name="registration_text"><u>By registering you are agreeing to</u></string>
+    <string name="registration_text_"><u>our T &amp; C and PP</u></string>
+
+    <string name="welcome_chat_text">Welcome to the Veegle App \n Enjoy chatting with new Friends.</string>
+
+    <string name="ze">0</string>
+    <string name="f">5</string>
+    <string name="ten">10</string>
+    <string name="twe">25</string>
+    <string name="fif">50</string>
+    <string name="hu">100</string>
+    <string name="ffivet">500</string>
+    <string name="tent">1000</string>
+    <string name="blank"></string>
+    <string name="label_no_connectivity">No Internet Connectivity , Please check your Wifi or Data connection </string>
+
+    <string name="admob_app_id">ca-app-pub-8550186369279687~3404110544</string>
+    <string name="banner_home_footer">ca-app-pub-8550186369279687/3149739920</string>
+    <string name="interstitial_full_screen">ca-app-pub-8550186369279687/2623250022</string>
+    <string name="msg_permission_required">Veegle require the permission to record the audio</string>
+    <string name="msg_invalid_gif">Please select valid GIF</string>
+
+    <!--For Deepak Demo-->
+    <!--<string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--<string name="banner_home_footer">ca-app-pub-5462492311397629/1673599621</string>-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-5462492311397629/8826165481</string>-->
+
+    <!--For Demo Use-->
+    <!--<string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--<string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>-->
+</resources>

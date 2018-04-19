@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#220a37</color>
+    <color name="colorPrimaryDark">#190629</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="chat_text">#6dc2ff</color>
+    <color name="date_text">#ff3daf</color>
+    <color name="new_friend_text">#decda5</color>
+    <color name="btn_color">#fc496a</color>
+    <color name="black">#212121</color>
+    <color name="backgroudncolor">#0c3a58</color>
+    <color name="hint_color">#adabb4</color>
+    <color name="bg_btn">#959595</color>
+    <color name="serious_btn_color">#d89b5a</color>
+    <color name="casual_btn_color">#31b5a1</color>
+
+    <color name="jumbo">#888888</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="shadow_color">#37cccccc</color>
+    <color name="trans_black">#72212121</color>
+    <color name="trans_white">#34ffffff</color>
+    <color name="half_color">#31274a</color>
+    <color name="yellow">#ffc212</color>
+    <color name="gray">#FFDFDDDD</color>
+    <color name="trans_white_dark">#cfffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="red">#FF0000</color>
+    <color name="meter_red">#fc3b43</color>
+    <color name="green">#59a14f</color>
+
+    <color name="switchTrack">#adabb4</color>
+    <color name="switchTrackDisable">#adabb4</color>
+    <color name="switchTrackActive">#53d769</color>
+    <color name="switchTrackNormal">#adabb4</color>
+    <color name="switchThumbBgActive">#53d769</color>
+    <color name="switchThumbActive">#ffffff</color>
+    <color name="switchThumbkNormal">#adabb4</color>
+
+    <color name="dialog_background">#af000000</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="dark_gray">#686666</color>
+</resources>

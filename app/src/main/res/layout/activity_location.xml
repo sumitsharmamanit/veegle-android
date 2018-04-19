@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relParent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/backBtn"
+            android:padding="10sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_btn"
+                android:id="@+id/imgBack"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:id="@+id/imgLocation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/relParent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/linLocation"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR LOCATION"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:singleLine="true"
+            android:layout_marginRight="10sp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColorHint="#ffffff"
+            android:id="@+id/edEnterLocation"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#00000000"
+            android:gravity="start|center">
+            <requestFocus />
+        </EditText>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@id/imgLocation"
+        android:layout_marginTop="15dp"
+        android:id="@+id/line"/>
+
+
+    <ListView
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cityList">
+
+    </ListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.datingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name=".DatingApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtPiHYmIcD3nWL812a20WYnSmscnkwfLw" />
+        <!-- android:value="AIzaSyAXiNh3jqqowQdMb6Yf4zEbi4hrU2g4eso" -->
+        <!-- AIzaSyBtPiHYmIcD3nWL812a20WYnSmscnkwfLw -->
+
+
+        <!-- android:name=".SplashScreenActivity" -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login_SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NextLoginSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="fcm.ACTION.HELLO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".CreateAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- <activity android:name=".LocationActivity" -->
+        <!-- android:screenOrientation="portrait"/> -->
+
+        <activity android:name=".AfterLocationSelect">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VerifyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilePhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WaitingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider{1016789415161786}"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/com_facebook_activity_theme" />
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <activity
+            android:name=".FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".AddMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMoreActivityNext"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileNext"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".EditProfileThirdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".HobbiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonalityQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.veegleapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".fragment.NotificationDialog"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".CameraActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".MyCameraActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <!-- <activity android:name=".PayPalActivity" /> -->
+        <!-- <activity android:name=".ConfirmationActivity" /> -->
+        <!-- <activity android:name=".MainActivity"></activity> -->
+        <!-- <activity android:name=".FullScreenActivity"/> -->
+        <activity android:name=".VidePlayActivity"></activity>
+    </application>
+
+</manifest> <!-- android:exported="true"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.VIEW" /> --><!-- <category android:name="android.intent.category.DEFAULT" /> --><!-- <category android:name="android.intent.category.BROWSABLE" /> --><!-- <data android:scheme="@string/fb_login_protocol_scheme" /> --><!-- </intent-filter></activity> -->

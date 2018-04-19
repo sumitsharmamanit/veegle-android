@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="25dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/block_popup"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:text="Are you sure you want to block this user?"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_margin_medium"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="- Select Block Reason"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_education"
+                android:gravity="center_vertical"
+                android:background="@drawable/blog_border"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_education"
+                    android:textColorHint="@color/hint_color"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:hint="Please select a reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    android:tint="@color/dark_gray"
+                    android:paddingLeft="@dimen/text_margin_small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_block_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="3"
+                android:layout_marginLeft="@dimen/activity_margin_medium"
+                android:layout_marginRight="@dimen/activity_margin_medium"
+                android:layout_marginTop="@dimen/activity_margin_normal"
+                android:hint="Enter another reason..."
+                android:gravity="start"
+                android:visibility="gone"
+                android:maxLength="300"
+                android:background="@drawable/blog_border"
+                android:padding="10dp"
+                android:layout_marginBottom="@dimen/activity_margin_normal"
+                android:textColor="@color/black"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_yes"
+                    android:layout_gravity="center"
+                    android:text="Yes"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_background"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_no"
+                    android:layout_gravity="center"
+                    android:text="No"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/button_background"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_1"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

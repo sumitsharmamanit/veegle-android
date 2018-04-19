@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="I want to find..."
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/timeline_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/men" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:text="Men"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <Switch
+                        android:id="@+id/switch_men"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Theme.MyTheme"
+                        android:track="@drawable/switch_track_custom"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/women" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:text="Women"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <Switch
+                        android:id="@+id/switch_women"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Theme.MyTheme"
+                        android:track="@drawable/switch_track_custom"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/timeline_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/deactivate_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Switch
+                    android:id="@+id/switch_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.MyTheme"
+                    android:track="@drawable/switch_track_custom"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="Age Range"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/timeline_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/age_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-45dp"
+                    app:rsb_indicator_background_color="@color/btn_color"
+                    app:rsb_indicator_drawable="@drawable/progress_hint_bg"
+                    app:rsb_indicator_height="40dp"
+                    app:rsb_indicator_padding_bottom="10dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_width="40dp"
+                    app:rsb_max="70"
+                    app:rsb_min="18"
+                    app:rsb_mode="range"
+                    app:rsb_progress_color="@color/btn_color"
+                    app:rsb_progress_default_color="@color/hint_color"
+                    app:rsb_progress_height="2dp"
+                    app:rsb_thumb_drawable="@drawable/left_cursor_bg"
+                    app:rsb_thumb_size="23dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Distance"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="50"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" KM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Switch
+                    android:id="@+id/switch_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/Theme.MyTheme"
+                    android:track="@drawable/switch_track_one"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="Miles"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/timeline_background"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/activity_horizontal_margin">
+
+
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/distance_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-45dp"
+                    app:rsb_indicator_background_color="@color/btn_color"
+                    app:rsb_indicator_drawable="@drawable/progress_hint_bg"
+                    app:rsb_indicator_height="40dp"
+                    app:rsb_indicator_padding_bottom="10dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_width="40dp"
+                    app:rsb_max="1000"
+                    app:rsb_min="0"
+                    app:rsb_mode="single"
+                    app:rsb_progress_color="@color/btn_color"
+                    app:rsb_progress_default_color="@color/hint_color"
+                    app:rsb_progress_height="2dp"
+                    app:rsb_thumb_drawable="@drawable/left_cursor_bg"
+                    app:rsb_thumb_size="23dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/timeline_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <com.zhouyou.view.seekbar.SignSeekBar
+                android:id="@+id/seek_bar_distance"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:ssb_section_text_position="bottom_sides"
+                app:ssb_show_progress_in_float="false"
+                app:ssb_show_section_mark="false"
+                app:ssb_show_section_text="false"
+                app:ssb_show_sign="true"
+                app:ssb_min="0"
+                app:ssb_max="1000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                app:ssb_show_thumb_shadow="true"
+                app:ssb_show_thumb_text="true"
+                app:ssb_sign_arrow_height="5dp"
+                app:ssb_sign_arrow_width="10dp"
+                app:ssb_sign_border_color="@color/green"
+                app:ssb_sign_color="@color/green"
+                app:ssb_sign_border_size="1dp"
+                app:ssb_sign_show_border="true"
+                app:ssb_section_text_interval="10" />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
+
+
+    <!--app:rsb_tick_mark_text_array="@array/values_bar"-->
+
+    <!--app:rsb_tick_mark_number="20"-->

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    android:elevation="3dp"
+    android:fitsSystemWindows="true"
+    android:minWidth="240dp"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_blog"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Upload photo"
+            android:drawableRight="@drawable/down_arrow"
+            android:textSize="16sp"
+            android:background="@drawable/blog_border"
+            android:drawableTint="@color/jumbo"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_reprt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/blog_border"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/tv_reprt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/sp_reprt"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/jumbo"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="5"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:hint="Type..."
+            android:gravity="start"
+            android:background="@drawable/blog_border"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDone"
+            android:layout_gravity="center"
+            android:text="Done"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_1"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

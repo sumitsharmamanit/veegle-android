@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "998298695237",
+    "firebase_url": "https://datingapp-24f2c.firebaseio.com",
+    "project_id": "datingapp-24f2c",
+    "storage_bucket": "datingapp-24f2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998298695237:android:28c9949785f5f7b0",
+        "android_client_info": {
+          "package_name": "com.veegleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998298695237-75bmatfqk76kj8n4iddtnqhl1orn52m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veegleapp",
+            "certificate_hash": "6846b2a91abaf7dbb9b7d4faa00f995899b84b58"
+          }
+        },
+        {
+          "client_id": "998298695237-g39inifn5lb4k971lfqktsrra604t8a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtPiHYmIcD3nWL812a20WYnSmscnkwfLw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998298695237-g39inifn5lb4k971lfqktsrra604t8a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
